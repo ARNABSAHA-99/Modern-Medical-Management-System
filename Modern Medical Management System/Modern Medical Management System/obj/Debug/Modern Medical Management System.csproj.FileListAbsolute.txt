@@ -1,0 +1,9 @@
+D:\Versity\7th Semester\OBJECT ORIENTED PROGRAMMING 2 [M]\Project\Modern Medical Management System\Modern Medical Management System\bin\Debug\Modern Medical Management System.exe.config
+D:\Versity\7th Semester\OBJECT ORIENTED PROGRAMMING 2 [M]\Project\Modern Medical Management System\Modern Medical Management System\bin\Debug\Modern Medical Management System.exe
+D:\Versity\7th Semester\OBJECT ORIENTED PROGRAMMING 2 [M]\Project\Modern Medical Management System\Modern Medical Management System\bin\Debug\Modern Medical Management System.pdb
+D:\Versity\7th Semester\OBJECT ORIENTED PROGRAMMING 2 [M]\Project\Modern Medical Management System\Modern Medical Management System\obj\Debug\Modern Medical Management System.csprojResolveAssemblyReference.cache
+D:\Versity\7th Semester\OBJECT ORIENTED PROGRAMMING 2 [M]\Project\Modern Medical Management System\Modern Medical Management System\obj\Debug\Modern_Medical_Management_System.Form1.resources
+D:\Versity\7th Semester\OBJECT ORIENTED PROGRAMMING 2 [M]\Project\Modern Medical Management System\Modern Medical Management System\obj\Debug\Modern_Medical_Management_System.Properties.Resources.resources
+D:\Versity\7th Semester\OBJECT ORIENTED PROGRAMMING 2 [M]\Project\Modern Medical Management System\Modern Medical Management System\obj\Debug\Modern Medical Management System.csproj.GenerateResource.Cache
+D:\Versity\7th Semester\OBJECT ORIENTED PROGRAMMING 2 [M]\Project\Modern Medical Management System\Modern Medical Management System\obj\Debug\Modern Medical Management System.exe
+D:\Versity\7th Semester\OBJECT ORIENTED PROGRAMMING 2 [M]\Project\Modern Medical Management System\Modern Medical Management System\obj\Debug\Modern Medical Management System.pdb
