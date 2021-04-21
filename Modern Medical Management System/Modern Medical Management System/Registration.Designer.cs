@@ -1,6 +1,6 @@
 ﻿namespace Modern_Medical_Management_System
 {
-    partial class Form1
+    partial class Registration
     {
         /// <summary>
         /// Required designer variable.
@@ -36,25 +36,30 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.gbShift = new System.Windows.Forms.GroupBox();
-            this.gbCategory = new System.Windows.Forms.GroupBox();
-            this.gbGender = new System.Windows.Forms.GroupBox();
-            this.dtpDOB = new System.Windows.Forms.DateTimePicker();
-            this.btnRegistration = new System.Windows.Forms.Button();
-            this.btnReset = new System.Windows.Forms.Button();
+            this.rbDay = new System.Windows.Forms.RadioButton();
             this.rbNight = new System.Windows.Forms.RadioButton();
-            this.rbAdmin = new System.Windows.Forms.RadioButton();
-            this.rbDoctor = new System.Windows.Forms.RadioButton();
+            this.gbCategory = new System.Windows.Forms.GroupBox();
             this.rbReceptionist = new System.Windows.Forms.RadioButton();
-            this.rbMale = new System.Windows.Forms.RadioButton();
-            this.rbFemale = new System.Windows.Forms.RadioButton();
+            this.rbDoctor = new System.Windows.Forms.RadioButton();
+            this.rbAdmin = new System.Windows.Forms.RadioButton();
+            this.gbGender = new System.Windows.Forms.GroupBox();
             this.rbOther = new System.Windows.Forms.RadioButton();
+            this.rbFemale = new System.Windows.Forms.RadioButton();
+            this.rbMale = new System.Windows.Forms.RadioButton();
+            this.btnRegistration = new System.Windows.Forms.Button();
+            this.btnLogin = new System.Windows.Forms.Button();
             this.tbName = new System.Windows.Forms.TextBox();
             this.tbEmail = new System.Windows.Forms.TextBox();
             this.tbMobileNumber = new System.Windows.Forms.TextBox();
             this.tbAddress = new System.Windows.Forms.TextBox();
             this.tbPassword = new System.Windows.Forms.TextBox();
             this.tbConfirmPassword = new System.Windows.Forms.TextBox();
-            this.rbDay = new System.Windows.Forms.RadioButton();
+            this.label8 = new System.Windows.Forms.Label();
+            this.tbDate = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.tbMonth = new System.Windows.Forms.TextBox();
+            this.tbYear = new System.Windows.Forms.TextBox();
             this.gbShift.SuspendLayout();
             this.gbCategory.SuspendLayout();
             this.gbGender.SuspendLayout();
@@ -63,10 +68,10 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(309, 21);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(297, 19);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(126, 25);
+            this.label1.Size = new System.Drawing.Size(180, 32);
             this.label1.TabIndex = 0;
             this.label1.Text = "Registration";
             // 
@@ -135,6 +140,28 @@
             this.gbShift.TabStop = false;
             this.gbShift.Text = "Shift";
             // 
+            // rbDay
+            // 
+            this.rbDay.AutoSize = true;
+            this.rbDay.Location = new System.Drawing.Point(65, 21);
+            this.rbDay.Name = "rbDay";
+            this.rbDay.Size = new System.Drawing.Size(54, 21);
+            this.rbDay.TabIndex = 2;
+            this.rbDay.TabStop = true;
+            this.rbDay.Text = "Day";
+            this.rbDay.UseVisualStyleBackColor = true;
+            // 
+            // rbNight
+            // 
+            this.rbNight.AutoSize = true;
+            this.rbNight.Location = new System.Drawing.Point(162, 21);
+            this.rbNight.Name = "rbNight";
+            this.rbNight.Size = new System.Drawing.Size(62, 21);
+            this.rbNight.TabIndex = 1;
+            this.rbNight.TabStop = true;
+            this.rbNight.Text = "Night";
+            this.rbNight.UseVisualStyleBackColor = true;
+            // 
             // gbCategory
             // 
             this.gbCategory.Controls.Add(this.rbReceptionist);
@@ -146,6 +173,39 @@
             this.gbCategory.TabIndex = 11;
             this.gbCategory.TabStop = false;
             this.gbCategory.Text = "Category";
+            // 
+            // rbReceptionist
+            // 
+            this.rbReceptionist.AutoSize = true;
+            this.rbReceptionist.Location = new System.Drawing.Point(163, 21);
+            this.rbReceptionist.Name = "rbReceptionist";
+            this.rbReceptionist.Size = new System.Drawing.Size(107, 21);
+            this.rbReceptionist.TabIndex = 4;
+            this.rbReceptionist.TabStop = true;
+            this.rbReceptionist.Text = "Receptionist";
+            this.rbReceptionist.UseVisualStyleBackColor = true;
+            // 
+            // rbDoctor
+            // 
+            this.rbDoctor.AutoSize = true;
+            this.rbDoctor.Location = new System.Drawing.Point(86, 21);
+            this.rbDoctor.Name = "rbDoctor";
+            this.rbDoctor.Size = new System.Drawing.Size(71, 21);
+            this.rbDoctor.TabIndex = 3;
+            this.rbDoctor.TabStop = true;
+            this.rbDoctor.Text = "Doctor";
+            this.rbDoctor.UseVisualStyleBackColor = true;
+            // 
+            // rbAdmin
+            // 
+            this.rbAdmin.AutoSize = true;
+            this.rbAdmin.Location = new System.Drawing.Point(12, 21);
+            this.rbAdmin.Name = "rbAdmin";
+            this.rbAdmin.Size = new System.Drawing.Size(68, 21);
+            this.rbAdmin.TabIndex = 2;
+            this.rbAdmin.TabStop = true;
+            this.rbAdmin.Text = "Admin";
+            this.rbAdmin.UseVisualStyleBackColor = true;
             // 
             // gbGender
             // 
@@ -159,88 +219,16 @@
             this.gbGender.TabStop = false;
             this.gbGender.Text = "Gender";
             // 
-            // dtpDOB
+            // rbOther
             // 
-            this.dtpDOB.Location = new System.Drawing.Point(208, 583);
-            this.dtpDOB.MaxDate = new System.DateTime(2021, 4, 20, 17, 54, 52, 0);
-            this.dtpDOB.Name = "dtpDOB";
-            this.dtpDOB.Size = new System.Drawing.Size(277, 22);
-            this.dtpDOB.TabIndex = 13;
-            this.dtpDOB.Value = new System.DateTime(2021, 4, 20, 0, 0, 0, 0);
-            // 
-            // btnRegistration
-            // 
-            this.btnRegistration.Location = new System.Drawing.Point(208, 622);
-            this.btnRegistration.Name = "btnRegistration";
-            this.btnRegistration.Size = new System.Drawing.Size(100, 23);
-            this.btnRegistration.TabIndex = 14;
-            this.btnRegistration.Text = "Registration";
-            this.btnRegistration.UseVisualStyleBackColor = true;
-            this.btnRegistration.Click += new System.EventHandler(this.btnRegistration_Click);
-            // 
-            // btnReset
-            // 
-            this.btnReset.Location = new System.Drawing.Point(314, 622);
-            this.btnReset.Name = "btnReset";
-            this.btnReset.Size = new System.Drawing.Size(75, 23);
-            this.btnReset.TabIndex = 15;
-            this.btnReset.Text = "Reset";
-            this.btnReset.UseVisualStyleBackColor = true;
-            // 
-            // rbNight
-            // 
-            this.rbNight.AutoSize = true;
-            this.rbNight.Location = new System.Drawing.Point(163, 21);
-            this.rbNight.Name = "rbNight";
-            this.rbNight.Size = new System.Drawing.Size(62, 21);
-            this.rbNight.TabIndex = 1;
-            this.rbNight.TabStop = true;
-            this.rbNight.Text = "Night";
-            this.rbNight.UseVisualStyleBackColor = true;
-            // 
-            // rbAdmin
-            // 
-            this.rbAdmin.AutoSize = true;
-            this.rbAdmin.Location = new System.Drawing.Point(12, 21);
-            this.rbAdmin.Name = "rbAdmin";
-            this.rbAdmin.Size = new System.Drawing.Size(68, 21);
-            this.rbAdmin.TabIndex = 2;
-            this.rbAdmin.TabStop = true;
-            this.rbAdmin.Text = "Admin";
-            this.rbAdmin.UseVisualStyleBackColor = true;
-            // 
-            // rbDoctor
-            // 
-            this.rbDoctor.AutoSize = true;
-            this.rbDoctor.Location = new System.Drawing.Point(86, 21);
-            this.rbDoctor.Name = "rbDoctor";
-            this.rbDoctor.Size = new System.Drawing.Size(71, 21);
-            this.rbDoctor.TabIndex = 3;
-            this.rbDoctor.TabStop = true;
-            this.rbDoctor.Text = "Doctor";
-            this.rbDoctor.UseVisualStyleBackColor = true;
-            // 
-            // rbReceptionist
-            // 
-            this.rbReceptionist.AutoSize = true;
-            this.rbReceptionist.Location = new System.Drawing.Point(163, 21);
-            this.rbReceptionist.Name = "rbReceptionist";
-            this.rbReceptionist.Size = new System.Drawing.Size(107, 21);
-            this.rbReceptionist.TabIndex = 4;
-            this.rbReceptionist.TabStop = true;
-            this.rbReceptionist.Text = "Receptionist";
-            this.rbReceptionist.UseVisualStyleBackColor = true;
-            // 
-            // rbMale
-            // 
-            this.rbMale.AutoSize = true;
-            this.rbMale.Location = new System.Drawing.Point(12, 21);
-            this.rbMale.Name = "rbMale";
-            this.rbMale.Size = new System.Drawing.Size(59, 21);
-            this.rbMale.TabIndex = 5;
-            this.rbMale.TabStop = true;
-            this.rbMale.Text = "Male";
-            this.rbMale.UseVisualStyleBackColor = true;
+            this.rbOther.AutoSize = true;
+            this.rbOther.Location = new System.Drawing.Point(178, 21);
+            this.rbOther.Name = "rbOther";
+            this.rbOther.Size = new System.Drawing.Size(65, 21);
+            this.rbOther.TabIndex = 7;
+            this.rbOther.TabStop = true;
+            this.rbOther.Text = "Other";
+            this.rbOther.UseVisualStyleBackColor = true;
             // 
             // rbFemale
             // 
@@ -253,16 +241,36 @@
             this.rbFemale.Text = "Female";
             this.rbFemale.UseVisualStyleBackColor = true;
             // 
-            // rbOther
+            // rbMale
             // 
-            this.rbOther.AutoSize = true;
-            this.rbOther.Location = new System.Drawing.Point(178, 21);
-            this.rbOther.Name = "rbOther";
-            this.rbOther.Size = new System.Drawing.Size(65, 21);
-            this.rbOther.TabIndex = 7;
-            this.rbOther.TabStop = true;
-            this.rbOther.Text = "Other";
-            this.rbOther.UseVisualStyleBackColor = true;
+            this.rbMale.AutoSize = true;
+            this.rbMale.Location = new System.Drawing.Point(12, 21);
+            this.rbMale.Name = "rbMale";
+            this.rbMale.Size = new System.Drawing.Size(59, 21);
+            this.rbMale.TabIndex = 5;
+            this.rbMale.TabStop = true;
+            this.rbMale.Text = "Male";
+            this.rbMale.UseVisualStyleBackColor = true;
+            // 
+            // btnRegistration
+            // 
+            this.btnRegistration.Location = new System.Drawing.Point(208, 622);
+            this.btnRegistration.Name = "btnRegistration";
+            this.btnRegistration.Size = new System.Drawing.Size(100, 36);
+            this.btnRegistration.TabIndex = 14;
+            this.btnRegistration.Text = "Registration";
+            this.btnRegistration.UseVisualStyleBackColor = true;
+            this.btnRegistration.Click += new System.EventHandler(this.btnRegistration_Click);
+            // 
+            // btnLogin
+            // 
+            this.btnLogin.Location = new System.Drawing.Point(314, 622);
+            this.btnLogin.Name = "btnLogin";
+            this.btnLogin.Size = new System.Drawing.Size(75, 36);
+            this.btnLogin.TabIndex = 15;
+            this.btnLogin.Text = "Login";
+            this.btnLogin.UseVisualStyleBackColor = true;
+            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
             // tbName
             // 
@@ -280,9 +288,9 @@
             // 
             // tbMobileNumber
             // 
-            this.tbMobileNumber.Location = new System.Drawing.Point(303, 169);
+            this.tbMobileNumber.Location = new System.Drawing.Point(314, 169);
             this.tbMobileNumber.Name = "tbMobileNumber";
-            this.tbMobileNumber.Size = new System.Drawing.Size(182, 22);
+            this.tbMobileNumber.Size = new System.Drawing.Size(171, 22);
             this.tbMobileNumber.TabIndex = 18;
             // 
             // tbAddress
@@ -308,31 +316,73 @@
             this.tbConfirmPassword.TabIndex = 21;
             this.tbConfirmPassword.UseSystemPasswordChar = true;
             // 
-            // rbDay
+            // label8
             // 
-            this.rbDay.AutoSize = true;
-            this.rbDay.Location = new System.Drawing.Point(65, 21);
-            this.rbDay.Name = "rbDay";
-            this.rbDay.Size = new System.Drawing.Size(54, 21);
-            this.rbDay.TabIndex = 2;
-            this.rbDay.TabStop = true;
-            this.rbDay.Text = "Day";
-            this.rbDay.UseVisualStyleBackColor = true;
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(205, 577);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(87, 17);
+            this.label8.TabIndex = 22;
+            this.label8.Text = "Date of Birth";
             // 
-            // Form1
+            // tbDate
+            // 
+            this.tbDate.Location = new System.Drawing.Point(302, 574);
+            this.tbDate.Name = "tbDate";
+            this.tbDate.Size = new System.Drawing.Size(33, 22);
+            this.tbDate.TabIndex = 23;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(410, 577);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(12, 17);
+            this.label9.TabIndex = 24;
+            this.label9.Text = "/";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(346, 577);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(12, 17);
+            this.label10.TabIndex = 25;
+            this.label10.Text = "/";
+            // 
+            // tbMonth
+            // 
+            this.tbMonth.Location = new System.Drawing.Point(364, 574);
+            this.tbMonth.Name = "tbMonth";
+            this.tbMonth.Size = new System.Drawing.Size(40, 22);
+            this.tbMonth.TabIndex = 26;
+            // 
+            // tbYear
+            // 
+            this.tbYear.Location = new System.Drawing.Point(428, 574);
+            this.tbYear.Name = "tbYear";
+            this.tbYear.Size = new System.Drawing.Size(57, 22);
+            this.tbYear.TabIndex = 27;
+            // 
+            // Registration
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(732, 670);
+            this.Controls.Add(this.tbYear);
+            this.Controls.Add(this.tbMonth);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.tbDate);
+            this.Controls.Add(this.label8);
             this.Controls.Add(this.tbConfirmPassword);
             this.Controls.Add(this.tbPassword);
             this.Controls.Add(this.tbAddress);
             this.Controls.Add(this.tbMobileNumber);
             this.Controls.Add(this.tbEmail);
             this.Controls.Add(this.tbName);
-            this.Controls.Add(this.btnReset);
+            this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.btnRegistration);
-            this.Controls.Add(this.dtpDOB);
             this.Controls.Add(this.gbGender);
             this.Controls.Add(this.gbCategory);
             this.Controls.Add(this.gbShift);
@@ -343,8 +393,8 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Name = "Form1";
-            this.Text = "l";
+            this.Name = "Registration";
+            this.Text = "Registration";
             this.gbShift.ResumeLayout(false);
             this.gbShift.PerformLayout();
             this.gbCategory.ResumeLayout(false);
@@ -368,9 +418,8 @@
         private System.Windows.Forms.GroupBox gbShift;
         private System.Windows.Forms.GroupBox gbCategory;
         private System.Windows.Forms.GroupBox gbGender;
-        private System.Windows.Forms.DateTimePicker dtpDOB;
         private System.Windows.Forms.Button btnRegistration;
-        private System.Windows.Forms.Button btnReset;
+        private System.Windows.Forms.Button btnLogin;
         private System.Windows.Forms.RadioButton rbNight;
         private System.Windows.Forms.RadioButton rbReceptionist;
         private System.Windows.Forms.RadioButton rbDoctor;
@@ -385,6 +434,12 @@
         private System.Windows.Forms.TextBox tbPassword;
         private System.Windows.Forms.TextBox tbConfirmPassword;
         private System.Windows.Forms.RadioButton rbDay;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.TextBox tbDate;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.TextBox tbMonth;
+        private System.Windows.Forms.TextBox tbYear;
     }
 }
 
